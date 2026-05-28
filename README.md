@@ -3,7 +3,7 @@
 An autonomous object-avoidance robot powered by an ESP32. This robot uses an ultrasonic sensor mounted on a servo motor to scan its surroundings, detect obstacles, and navigate around them by choosing the clearest path.
 
 ## 🎥 See it in Action
-Check out the full DIY build process, including detailed table recording footage of the assembly and testing, on **Kalyan Tech-hub**:
+Check out the full DIY build process, including detailed table recording footage of the assembly and testing, on **Kalyan Xperiments**:
 [![Watch on YouTube](https://img.shields.io/badge/YouTube-Watch_Video-red)](YOUR_YOUTUBE_VIDEO_LINK_HERE)
 
 ## 🛠️ Components Used
