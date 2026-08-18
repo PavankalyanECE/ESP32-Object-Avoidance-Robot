@@ -51,12 +51,12 @@ These views show the different mechanical perspectives of the custom-built robot
 
 ---
 
-## 🔌 Electronics & Wiring
+## 🔌 Filnal Robot
 
-|       Complete Electronics      |    Internal Arrangement    |
-| :-----------------------------: | :------------------------: |
-| ![](Images/Robot-View2-IMG.jpg) | ![](Images/Frame-IMG2.jpg) |
-|    **ESP32 & Sensor System**    |   **Internal Components**  |
+|       Complete Electronics      |
+| :-----------------------------: |
+| ![](Images/Robot-View2-IMG.jpg) |
+|    **ESP32 & Sensor System**    |
 
 The electronics include the **ESP32 development board, L298N motor driver, HC-SR04 ultrasonic sensor, SG90 servo motor, battery, and connecting wires**.
 
