@@ -4,10 +4,9 @@
 
 ## 🎥 Demo Video
 
-[![ESP32 Object Avoidance Robot - Watch Demo](https://img.shields.io/badge/▶%20Watch%20Demo%20on%20YouTube-red?style=for-the-badge\&logo=youtube)](YOUR_YOUTUBE_VIDEO_LINK_HERE)
+▶️ **[Watch the ESP32 Object Avoidance Robot Demo on YouTube](https://youtu.be/8Xb7ZHAxtOk?si=ELp9O76r6L8dWdZC)**
 
-**Watch the robot detect obstacles, scan its surroundings, choose the clearer path, and navigate autonomously.**
-
+An autonomous obstacle-avoidance robot built using **ESP32, HC-SR04 ultrasonic sensor, SG90 servo motor, L298N motor driver, and DC geared motors**. The robot continuously scans its surroundings, detects obstacles, and automatically changes direction to avoid collisions.
 ---
 
 ## 📖 Project Overview
