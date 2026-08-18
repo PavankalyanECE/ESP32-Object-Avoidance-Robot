@@ -20,20 +20,20 @@ An **HC-SR04 ultrasonic sensor** is mounted on an **SG90 servo motor**, allowing
 
 ## 📸 Final Prototype
 
-|        Front / Main View       |              Side View              |
+|        Front / Main View       |             Front Sensor Assembly              |
 | :----------------------------: | :---------------------------------: |
-| ![](Images/Robot-View-IMG.jpg) | ![](Images/Frame-Side-View-IMG.jpg) |
+| ![](Images/Robot-View-IMG.jpg) | ![](Images/Robot-View2-IMG.jpg) |
 |       **Complete Robot**       |            **Side View**            |
 
 The final prototype combines the mechanical chassis, drive system, ESP32 controller, motor driver, ultrasonic sensor, servo motor, battery, and wiring into a compact autonomous robot.
 
 ---
 
-## 🏗️ Mechanical Design
+## Frame View
 
-|        Chassis View       |           Top Frame View           |
+|        Chassis View       |           Bottom View           |
 | :-----------------------: | :--------------------------------: |
-| ![](Images/Frame-IMG.jpg) | ![](Images/Frame-Top-View-IMG.jpg) |
+| ![](Images/Frame-IMG.jpg) | ![](Images/Frame-Bottom-View-IMG.jpg) |
 |     **Custom Chassis**    |       **Top Frame Structure**      |
 
 The robot chassis was manually constructed using lightweight wooden/ice-cream sticks. The frame was designed to provide enough space for the motors, wheels, electronics, battery, and sensor assembly.
@@ -42,10 +42,11 @@ The robot chassis was manually constructed using lightweight wooden/ice-cream st
 
 ## ⚙️ Drive System
 
-|              Bottom View              |              Rear View              |
-| :-----------------------------------: | :---------------------------------: |
-| ![](Images/Frame-Bottom-View-IMG.jpg) | ![](Images/Frame-Back-View-IMG.jpg) |
-|     **Motor & Wheel Arrangement**     |          **Rear Structure**         |
+|              Top Frame View              |              Rear View              |           Robot Top View           |        Side View     |
+| :-----------------------------------: | :---------------------------------: | :--------------------------------: | :-----------------------------: |
+
+| ![](Images/Frame-Top-View-IMG.jpg) | ![](Images/Frame-Back-View-IMG.jpg) | ![](Images/Robot-Top-View-IMG.jpg) | ![](Images/Frame-Side-View-IMG.jpg) |
+|     **Motor & Wheel Arrangement**     |          **Rear Structure**         |            **Top View**            |     **HC-SR04 + SG90 Servo**    |
 
 Two DC geared motors are used to drive the robot. The motors are mounted on opposite sides and provide differential drive, allowing the robot to move forward, reverse, and turn.
 
@@ -64,12 +65,7 @@ The ESP32 acts as the main controller and coordinates the sensor scanning and mo
 
 ---
 
-## 📡 Ultrasonic Sensor System
 
-|           Robot Top View           |      Front Sensor Assembly      |
-| :--------------------------------: | :-----------------------------: |
-| ![](Images/Robot-Top-View-IMG.jpg) | ![](Images/Robot-View2-IMG.jpg) |
-|            **Top View**            |     **HC-SR04 + SG90 Servo**    |
 
 The **HC-SR04 ultrasonic sensor** measures the distance between the robot and nearby objects.
 
