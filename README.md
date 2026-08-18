@@ -6,6 +6,33 @@ An autonomous object-avoidance robot powered by an **ESP32**. The robot uses an 
 
 ## 📸 Project Build
 
+### 🔌 Electronics & Wiring
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="Images/Robot-View-IMG.jpg" width="400">
+    </td>
+    <td align="center">
+      <img src="Images/Robot-View2-IMG.jpg" width="400">
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>Complete Robot</b></td>
+    <td align="center"><b>Electronics & Sensor</b></td>
+  </tr>
+  <tr>
+    <td align="center">
+      Complete assembled robot with the ESP32, motors, sensor and custom chassis.
+    </td>
+    <td align="center">
+      ESP32 controller, L298N motor driver, HC-SR04 ultrasonic sensor and SG90 servo.
+    </td>
+  </tr>
+</table>
+
+---
+
 ### 🏗️ Custom Chassis
 
 <table>
@@ -60,32 +87,7 @@ An autonomous object-avoidance robot powered by an **ESP32**. The robot uses an 
 
 ---
 
-### 🔌 Electronics & Wiring
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="Images/Robot-View-IMG.jpg" width="400">
-    </td>
-    <td align="center">
-      <img src="Images/Robot-View2-IMG.jpg" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Complete Robot</b></td>
-    <td align="center"><b>Electronics & Sensor</b></td>
-  </tr>
-  <tr>
-    <td align="center">
-      Complete assembled robot with the ESP32, motors, sensor and custom chassis.
-    </td>
-    <td align="center">
-      ESP32 controller, L298N motor driver, HC-SR04 ultrasonic sensor and SG90 servo.
-    </td>
-  </tr>
-</table>
-
----
 
 ### 🔋 Internal Arrangement
 
