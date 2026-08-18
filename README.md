@@ -1,183 +1,120 @@
 # ESP32 Object Avoidance Robot 🤖
 
-An autonomous object-avoidance robot powered by an **ESP32**. The robot uses an **HC-SR04 ultrasonic sensor mounted on an SG90 servo motor** to scan its surroundings, detect obstacles, and navigate toward the clearest path.
+> An autonomous obstacle-avoidance robot built using **ESP32, HC-SR04 ultrasonic sensor, SG90 servo motor, L298N motor driver, and DC geared motors**.
+
+## 🎥 Demo Video
+
+[![ESP32 Object Avoidance Robot - Watch Demo](https://img.shields.io/badge/▶%20Watch%20Demo%20on%20YouTube-red?style=for-the-badge\&logo=youtube)](YOUR_YOUTUBE_VIDEO_LINK_HERE)
+
+**Watch the robot detect obstacles, scan its surroundings, choose the clearer path, and navigate autonomously.**
 
 ---
 
-## 📸 Project Build
+## 📖 Project Overview
 
-### 🔌 Electronics & Wiring
+This project is an **ESP32-based autonomous object-avoidance robot** designed and built from scratch.
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="Images/Robot-View-IMG.jpg" width="400">
-    </td>
-    <td align="center">
-      <img src="Images/Robot-View2-IMG.jpg" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Complete Robot</b></td>
-    <td align="center"><b>Electronics & Sensor</b></td>
-  </tr>
-  <tr>
-    <td align="center">
-      Complete assembled robot with the ESP32, motors, sensor and custom chassis.
-    </td>
-    <td align="center">
-      ESP32 controller, L298N motor driver, HC-SR04 ultrasonic sensor and SG90 servo.
-    </td>
-  </tr>
-</table>
+An **HC-SR04 ultrasonic sensor** is mounted on an **SG90 servo motor**, allowing the robot to scan different directions when an obstacle is detected. The ESP32 processes the distance measurements and controls the DC motors through an **L298N motor driver** to select a suitable path.
 
 ---
 
-### 🏗️ Custom Chassis
+## 📸 Final Prototype
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="Images/Frame-IMG.jpg" width="400">
-    </td>
-    <td align="center">
-      <img src="Images/Frame-Side-View-IMG.jpg" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Front Frame View</b></td>
-    <td align="center"><b>Side Frame View</b></td>
-  </tr>
-  <tr>
-    <td align="center">
-      Custom-built lightweight chassis made using wooden/ice-cream sticks.
-    </td>
-    <td align="center">
-      Side structure supporting the wheels and internal components.
-    </td>
-  </tr>
-</table>
+|        Front / Main View       |              Side View              |
+| :----------------------------: | :---------------------------------: |
+| ![](Images/Robot-View-IMG.jpg) | ![](Images/Frame-Side-View-IMG.jpg) |
+|       **Complete Robot**       |            **Side View**            |
+
+The final prototype combines the mechanical chassis, drive system, ESP32 controller, motor driver, ultrasonic sensor, servo motor, battery, and wiring into a compact autonomous robot.
 
 ---
 
-### ⚙️ Drive System
+## 🏗️ Mechanical Design
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="Images/Frame-Bottom-View-IMG.jpg" width="400">
-    </td>
-    <td align="center">
-      <img src="Images/Frame-Back-View-IMG.jpg" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Bottom View</b></td>
-    <td align="center"><b>Rear View</b></td>
-  </tr>
-  <tr>
-    <td align="center">
-      Two DC geared motors are mounted on opposite sides to provide differential drive.
-    </td>
-    <td align="center">
-      Rear structure showing the motor and wheel mounting arrangement.
-    </td>
-  </tr>
-</table>
+|        Chassis View       |           Top Frame View           |
+| :-----------------------: | :--------------------------------: |
+| ![](Images/Frame-IMG.jpg) | ![](Images/Frame-Top-View-IMG.jpg) |
+|     **Custom Chassis**    |       **Top Frame Structure**      |
+
+The robot chassis was manually constructed using lightweight wooden/ice-cream sticks. The frame was designed to provide enough space for the motors, wheels, electronics, battery, and sensor assembly.
 
 ---
 
+## ⚙️ Drive System
 
+|              Bottom View              |              Rear View              |
+| :-----------------------------------: | :---------------------------------: |
+| ![](Images/Frame-Bottom-View-IMG.jpg) | ![](Images/Frame-Back-View-IMG.jpg) |
+|     **Motor & Wheel Arrangement**     |          **Rear Structure**         |
 
-### 🔋 Internal Arrangement
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="Images/Frame-IMG2.jpg" width="400">
-    </td>
-    <td align="center">
-      <img src="Images/Frame-Top-View-IMG.jpg" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Internal Components</b></td>
-    <td align="center"><b>Top Frame View</b></td>
-  </tr>
-  <tr>
-    <td align="center">
-      Internal arrangement of the motors, battery, wiring and electronic components.
-    </td>
-    <td align="center">
-      Top structure of the custom-built chassis and component mounting arrangement.
-    </td>
-  </tr>
-</table>
+Two DC geared motors are used to drive the robot. The motors are mounted on opposite sides and provide differential drive, allowing the robot to move forward, reverse, and turn.
 
 ---
 
-### 📡 Sensor System
+## 🔌 Electronics & Wiring
 
-<table>
-  <tr>
-    <td align="center">
-      <img src="Images/Robot-Top-View-IMG.jpg" width="400">
-    </td>
-    <td align="center">
-      <img src="Images/Robot-View2-IMG.jpg" width="400">
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Top View</b></td>
-    <td align="center"><b>Ultrasonic Sensor</b></td>
-  </tr>
-  <tr>
-    <td align="center">
-      Overall layout of the robot and its sensor assembly.
-    </td>
-    <td align="center">
-      HC-SR04 mounted on an SG90 servo for directional obstacle scanning.
-    </td>
-  </tr>
-</table>
+|       Complete Electronics      |    Internal Arrangement    |
+| :-----------------------------: | :------------------------: |
+| ![](Images/Robot-View2-IMG.jpg) | ![](Images/Frame-IMG2.jpg) |
+|    **ESP32 & Sensor System**    |   **Internal Components**  |
+
+The electronics include the **ESP32 development board, L298N motor driver, HC-SR04 ultrasonic sensor, SG90 servo motor, battery, and connecting wires**.
+
+The ESP32 acts as the main controller and coordinates the sensor scanning and motor movement.
 
 ---
 
-## 🎥 See It in Action
+## 📡 Ultrasonic Sensor System
 
-Check out the complete DIY build process, including **assembly, wiring, testing, and demonstration**, on **Kalyan Xperiments**:
+|           Robot Top View           |      Front Sensor Assembly      |
+| :--------------------------------: | :-----------------------------: |
+| ![](Images/Robot-Top-View-IMG.jpg) | ![](Images/Robot-View2-IMG.jpg) |
+|            **Top View**            |     **HC-SR04 + SG90 Servo**    |
 
-[![Watch on YouTube](https://img.shields.io/badge/YouTube-Watch_Video-red?style=for-the-badge\&logo=youtube)](YOUR_YOUTUBE_VIDEO_LINK_HERE)
+The **HC-SR04 ultrasonic sensor** measures the distance between the robot and nearby objects.
+
+The sensor is mounted on an **SG90 servo motor**, allowing it to rotate and scan different directions instead of sensing only the area directly in front of the robot.
+
+---
+
+## 🧩 Additional Frame View
+
+|         Frame View         |           Robot View           |
+| :------------------------: | :----------------------------: |
+| ![](Images/Frame-IMG2.jpg) | ![](Images/Robot-View-IMG.jpg) |
+|     **Internal Frame**     |       **Assembled Robot**      |
+
+These views show how the mechanical structure and electronics are integrated into the final prototype.
 
 ---
 
 ## 🛠️ Components Used
 
-| Component                     | Description                             |
-| :---------------------------- | :-------------------------------------- |
-| **ESP32 Development Board**   | Main microcontroller                    |
-| **L298N Motor Driver**        | Controls the DC motors                  |
-| **2 × DC Gear Motors**        | Provides robot movement                 |
-| **HC-SR04 Ultrasonic Sensor** | Detects obstacles and measures distance |
-| **SG90 Servo Motor**          | Rotates the ultrasonic sensor           |
-| **Battery Pack**              | Provides power to the robot             |
-| **Robot Wheels**              | Provides movement and traction          |
-| **Custom Chassis**            | Wooden/ice-cream-stick structure        |
-| **Jumper Wires**              | Electrical connections                  |
+| Component                     | Description                      |
+| :---------------------------- | :------------------------------- |
+| **ESP32 Development Board**   | Main microcontroller             |
+| **L298N Motor Driver**        | Controls the DC motors           |
+| **2 × DC Gear Motors**        | Provides robot movement          |
+| **HC-SR04 Ultrasonic Sensor** | Measures obstacle distance       |
+| **SG90 Servo Motor**          | Rotates the ultrasonic sensor    |
+| **2 × 18650 Li-ion Cells**    | Power source                     |
+| **Robot Wheels**              | Provides traction and movement   |
+| **Custom Chassis**            | Wooden/ice-cream-stick structure |
+| **Jumper Wires**              | Electrical connections           |
 
 ---
 
 ## 🔌 Circuit Connections
 
 | Component           | ESP32 Pin |
-| :------------------ | :-------- |
-| **Ultrasonic TRIG** | GPIO 5    |
-| **Ultrasonic ECHO** | GPIO 18   |
-| **Motor IN1**       | GPIO 27   |
-| **Motor IN2**       | GPIO 26   |
-| **Motor IN3**       | GPIO 25   |
-| **Motor IN4**       | GPIO 33   |
-| **Servo Signal**    | GPIO 13   |
+| :------------------ | :-------: |
+| **Ultrasonic TRIG** |   GPIO 5  |
+| **Ultrasonic ECHO** |  GPIO 18  |
+| **Motor IN1**       |  GPIO 27  |
+| **Motor IN2**       |  GPIO 26  |
+| **Motor IN3**       |  GPIO 25  |
+| **Motor IN4**       |  GPIO 33  |
+| **Servo Signal**    |  GPIO 13  |
 
 ---
 
@@ -185,71 +122,64 @@ Check out the complete DIY build process, including **assembly, wiring, testing,
 
 ### 1. Forward Motion
 
-The robot moves forward while the ultrasonic sensor detects a clear path with a distance greater than **20 cm**.
+The robot continuously measures the distance in front of it.
+
+If the measured distance is greater than **20 cm**, the robot continues moving forward.
 
 ### 2. Obstacle Detection
 
-When an obstacle is detected within **20 cm**, the ESP32 stops the motors to prevent a collision.
+When an obstacle is detected within **20 cm**, the ESP32 stops the motors.
 
-### 3. Sensor Scanning
+### 3. Direction Scanning
 
 The SG90 servo rotates the HC-SR04 ultrasonic sensor to scan different directions.
 
-The robot checks:
+The robot checks approximately:
 
-* **Left side:** approximately 150°
-* **Right side:** approximately 30°
+* **Left:** 150°
+* **Right:** 30°
 
-The ultrasonic sensor measures the available distance in each direction.
+### 4. Distance Comparison
 
-### 4. Decision Making
+The ESP32 compares the measured distances from both directions.
 
-The ESP32 compares the left and right distance measurements.
+### 5. Path Selection
 
-* If the **left side** has more space → the robot turns left.
-* If the **right side** has more space → the robot turns right.
-
-### 5. Autonomous Navigation
-
-After avoiding the obstacle, the robot resumes forward movement and continues scanning for new obstacles.
-
----
-
-## 🧠 Control Logic
+The robot selects the direction with the greater available distance.
 
 ```text
-              START
-                │
-                ▼
-        Measure Front Distance
-                │
-        ┌───────┴────────┐
-        │                │
-   Distance > 20 cm   Distance ≤ 20 cm
-        │                │
-        ▼                ▼
-     Move Forward       STOP
-                         │
-                         ▼
-                  Scan Left & Right
-                         │
-                         ▼
-                 Compare Distances
-                         │
-              ┌──────────┴──────────┐
-              │                     │
-        Left is Clearer        Right is Clearer
-              │                     │
-              ▼                     ▼
-          Turn Left             Turn Right
-              │                     │
-              └──────────┬──────────┘
-                         │
-                         ▼
-                   Move Forward
-                         │
-                         ▼
-                  Continue Scanning
+             START
+               │
+               ▼
+        Measure Distance
+               │
+        ┌──────┴──────┐
+        │             │
+     > 20 cm       ≤ 20 cm
+        │             │
+        ▼             ▼
+   Move Forward      STOP
+                      │
+                      ▼
+               Scan Left/Right
+                      │
+                      ▼
+              Compare Distance
+                      │
+             ┌────────┴────────┐
+             │                 │
+        Left is Clear      Right is Clear
+             │                 │
+             ▼                 ▼
+         Turn Left         Turn Right
+             │                 │
+             └────────┬────────┘
+                      │
+                      ▼
+                Move Forward
+                      │
+                      ▼
+                Repeat Cycle
 ```
 
 ---
@@ -262,21 +192,19 @@ Clone this repository or download the project files.
 
 ### 2. Open the Code
 
-Open:
+Open the Arduino source file located inside the `Code` folder:
 
 ```text
 Code/Obstacle_Avoiding_Robot.ino
 ```
 
-using the **Arduino IDE**.
+### 3. Install ESP32 Board Support
 
-### 3. Install ESP32 Board Package
-
-Make sure the ESP32 board package is installed through the Arduino IDE Boards Manager.
+Open Arduino IDE and install the **ESP32 board package** through the Boards Manager.
 
 ### 4. Install ESP32Servo
 
-If the standard `Servo.h` library causes compilation problems on ESP32, install the **ESP32Servo** library from the Arduino IDE Library Manager.
+If the standard `Servo.h` library causes compilation problems with ESP32, install the **ESP32Servo** library through the Arduino IDE Library Manager.
 
 Use:
 
@@ -290,17 +218,35 @@ instead of:
 #include <Servo.h>
 ```
 
-### 5. Select Board and Port
+### 5. Select Board
 
-Select the appropriate ESP32 board and the correct COM port.
+Select your appropriate ESP32 board from:
 
-### 6. Upload
+```text
+Tools → Board → ESP32
+```
 
-Connect the ESP32 to your computer and upload the program.
+### 6. Select COM Port
 
-### 7. Test
+Connect the ESP32 to your computer and select the correct COM port.
 
-Power the robot and place an obstacle in front of it. The robot should detect the obstacle, scan both directions, select the clearer path, and continue moving.
+### 7. Upload
+
+Upload the program to the ESP32.
+
+### 8. Test the Robot
+
+Power the robot and place an obstacle in front of it.
+
+The robot should:
+
+1. Move forward.
+2. Detect the obstacle.
+3. Stop.
+4. Scan left and right.
+5. Compare the distances.
+6. Turn toward the clearer direction.
+7. Continue moving forward.
 
 ---
 
@@ -330,11 +276,11 @@ ESP32-Object-Avoidance-Robot/
 
 ## ✨ Key Features
 
-* 🤖 ESP32-based autonomous robot
+* 🤖 ESP32-based autonomous navigation
 * 📡 HC-SR04 ultrasonic obstacle detection
-* 🔄 Servo-controlled sensor scanning
+* 🔄 SG90 servo-controlled sensor scanning
 * 🧭 Automatic path selection
-* ⚙️ Dual DC motor differential drive
+* ⚙️ Dual DC motor drive
 * 🔋 Battery-powered operation
 * 🛠️ Custom-built lightweight chassis
 * 💻 Embedded C/C++ programming
@@ -344,14 +290,29 @@ ESP32-Object-Avoidance-Robot/
 
 ## 🎯 Applications
 
-The basic obstacle-avoidance concept can be extended to:
+This project can be extended for:
 
 * Autonomous mobile robots
-* Indoor navigation robots
-* Smart surveillance platforms
-* Educational robotics projects
+* Educational robotics
+* Indoor navigation
 * Autonomous vehicle prototypes
-* Robotics and embedded-systems experiments
+* Surveillance robots
+* Embedded systems experiments
+* Robotics research and development
+
+---
+
+## 🔮 Future Improvements
+
+Possible improvements include:
+
+* Add Bluetooth or Wi-Fi remote control
+* Add an ESP32-CAM for live video
+* Implement PID-based motor control
+* Add wheel encoders for accurate movement
+* Improve obstacle-avoidance algorithms
+* Add mapping and navigation capabilities
+* Add a rechargeable battery management system
 
 ---
 
@@ -367,4 +328,8 @@ If you find this project useful, consider giving the repository a ⭐.
 
 **Pavan Kalyan Imandi**
 
-Built as a hands-on **ESP32, Embedded Systems, Robotics, and Autonomous Navigation** project.
+Electronics & Communication Engineering | Embedded Systems | Robotics
+
+---
+
+### ⭐ If you like this project, consider giving it a star!
